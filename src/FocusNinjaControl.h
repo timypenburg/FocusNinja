@@ -53,6 +53,7 @@ private:
     int carriageDirection = 0;
     int numberOfPulses = 0;
     int pulseWidthMs = (1000000 / (2 * DEGREES_PER_STEP * 360 / DEGREES_PER_STEP)) / DEFAULT_SPEED;
+    
     void (*logger)(const char*) = 0;
 
     //Basic function to rotate the steppermotor
